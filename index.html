@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting App</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <h3>Voting App</h3>
+        </header>
+        <div id="voting-section">
+            <div id="bjp">
+                <input type="button" name="bjp" id="bjp-btn" value="BJP">
+            </div>
+            <div id="congress">
+                <input type="button" name="congress" id="congress-btn" value="Congress">
+            </div>
+            <div id="aap">
+                <input type="button" name="aap" id="aap-btn" value="AAP">
+            </div>
+        </div>
+        <div id="result">
+            <input id="result-btn" type="button" name="result" value="Result" onclick="result()">
+        </div>
+
+        <div id="result-section">
+            <table>
+                <tr id="result-bjp"></tr>
+                <tr id="result-congress"></tr>
+                <tr id="result-aap"></tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script src="vote.js"></script>
+</html>
