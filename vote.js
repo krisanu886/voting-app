@@ -6,9 +6,11 @@ var bjp = document.getElementById('bjp-btn');
 var congress = document.getElementById('congress-btn');
 var aap = document.getElementById('aap-btn');
 
+
 bjp.addEventListener("click", bcount);
 congress.addEventListener("click", ccount);
 aap.addEventListener("click", acount);
+
 
 function bcount(){
     bjpcount++;
@@ -22,6 +24,7 @@ function acount(){
     aapcount++;
     console.log(aapcount);
 }
+
 
 function result(){
     document.getElementById("result-bjp").innerHTML = `<td> BJP </td><td> ${bjpcount} Vote</td>`;
